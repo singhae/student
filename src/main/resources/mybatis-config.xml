@@ -5,6 +5,6 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 <configuration>
 	<typeAliases>
 		<typeAlias alias="board" type="com.term.myapp.board.BoardVO" />
-		<typeAlias alias="user" type="com.term.myapp.board.UserVO" />
+		<typeAlias alias="user" type="com.term.myapp.user.UserVO" />
 	</typeAliases>
 </configuration>

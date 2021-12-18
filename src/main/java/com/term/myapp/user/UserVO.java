@@ -1,4 +1,4 @@
-package com.term.myapp.board;
+package com.term.myapp.user;
 
 public class UserVO {
 	private  String userid;
