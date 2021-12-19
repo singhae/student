@@ -13,6 +13,15 @@
 	td{
 	text-decoration: underline;
 	}
+	body {
+	background-color:#1e3932;
+	color:white;
+	font-size: 20px;
+	
+} 
+	#list button {
+	font-size:20px;
+	}
 </style>
 </head>
 <body>
@@ -31,7 +40,7 @@
 <tr><td>MBTI:</td><td><textarea cols="50" rows="5" name="content"></textarea></td></tr>
 <!--이름이 content 인 텍스트에리아 만들어줌  -->
 </table> <!--  posts.jsp 링크. submit 타입. 값은 AddPost -->
-<button type="reset">Reset</button>
+<button type="reset" >Reset</button>
 <button type="button" onclick="location.href='list'">목록보기</button>
 <button type="submit">등록하기</button>
 </form>

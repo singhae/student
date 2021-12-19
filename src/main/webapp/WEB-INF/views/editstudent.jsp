@@ -3,6 +3,19 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <!DOCTYPE html>
 <html>
+<style>
+	input,textarea{
+		border: 3px solid black;
+		
+	}
+	
+	body {
+	background-color: #1e3932;
+	color:white;
+	font-size: 20px;
+	
+} 
+</style>	
 <head>
 <meta charset="UTF-8">
 <title>Edit Form</title>

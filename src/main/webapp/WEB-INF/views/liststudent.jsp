@@ -35,10 +35,9 @@ background-image:url('https://cdn.discordapp.com/attachments/460145928850898945/
 
 } */
 body {
-	background-image: url('https://cdn.crowdpic.net/list-thumb/thumb_l_8582BAAFFC1167ABBC20F9373E649C4A.jpg');
-	/* background-repeat: no-repeat;   */
-	 /* background-image: url('https://png.pngtree.com/png-clipart/20201117/ourmid/pngtree-christmas-tree-branch-decoration-with-realstic-gift-box-png-image_2438283.jpg'); */
-}
+	background-color:#1e3932;
+} 
+
 #list {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
@@ -48,7 +47,7 @@ body {
   border: 1px solid #ddd;
   padding: 8px;
   text-align:center;
-  color: black;
+  color: white;
   font-size: 20px;
 }
 /* #list tr:nth-child(even){background-color: #f2f2f2;}
@@ -58,8 +57,15 @@ body {
   padding-bottom: 12px;
   text-align: center;
  font-size: 20px;
-  background-color: green;
-  color: black;
+  /* background-color: green; */
+  background-color:#E92A02;
+  color: white;
+}
+#list a {
+color: white;
+}
+h1{
+color: #E92A02;
 }
 </style>
 <script>
@@ -76,7 +82,7 @@ body {
 <title>Insert title here</title>
 </head>
 <body>
-<h1 style = "text-align: center"> INFORMATION </h1>
+<h1 style = "text-align: center" > INFORMATION </h1>
 <table id="list" width="90%">
 <tr>
 	<th>Id</th>
