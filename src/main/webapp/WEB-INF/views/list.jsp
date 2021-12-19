@@ -17,8 +17,8 @@
   padding: 8px;
   text-align:center;
 }
-#list tr:nth-child(even){background-color: #f2f2f2;}
-#list tr:hover {background-color: #ddd;}
+#list tr:nth-child(even){background-color: #green;}
+#list tr:hover {background-color: #green;}
 #list th {
   padding-top: 12px;
   padding-bottom: 12px;
