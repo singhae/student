@@ -7,6 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>free board</title>
 <style>
+.headings { color: lime; text-decoration: overline; }
 #list {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
@@ -23,6 +24,7 @@
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: center;
+ 
   background-color: #006bb3;
   color: white;
 }
@@ -33,34 +35,41 @@
 		/* alt id; */
 		/* alert(id);
 		alert("./deletepost/{id}" + seq);
- */		if(a) location.href="./deletepost/" + id; // 여기 *컨트롤러 밸류 : "/board//deletepost/{id}"
+ */		if(a) location.href="./deletestudent/" + id; // 여기 *컨트롤러 밸류 : "/board//deletepost/{id}"
 	}
 </script>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
 </head>
 <body>
-<h1>자유게시판</h1>
-
 <table id="list" width="90%">
 <tr>
 	<th>Id</th>
 	<th>Name</th>
-	<th>Gender</th>
-	<th>Content</th>
+	<th>StudentID</th>
+	<th>Graduate</th>
+	<th>age</th>
+	<th>  MBTI  </th>
+	<th>Date</th>
 	<th>Edit</th>
 	<th>Delete</th>
 </tr>
 <c:forEach items="${list}" var="u">
 	<tr>
-		<td>${u.getSeq()}</td>
-		<td>${u.getTitle()}</td>
-		<td>${u.getWriter()}</td>
-		<td>${u.getContent()}</td>
+		<td>${u.seq}</td>
+		<td>${u.studentname}</td>
+		<td>${u.studentid}</td>
+		<td>${u.gradudate}</td>
+		<td>${u.age}</td>
+		<td>${u.content}</td>
+		<td>${u.regdate}</td>
 
-		<td><a href="./edit/${u.getSeq()}">Edit</a></td><!--  //여기  -->
-		<td><a href="javascript:delete_ok('${u.getSeq()}')">Delete</a></td><!--  //여기  -->
+		<td><a href="./edit/${u.seq}">Edit</a></td><!--  //여기  -->
+		<td><a href="javascript:delete_ok('${u.seq}')">Delete</a></td><!--  //여기  --> 
 	</tr>
 </c:forEach>
 </table>
-<br/><button type="button" onclick="location.href='add'">Add New Post</button>
+<br/><button type="button" onclick="location.href='add1'">Add New Post</button>
 </body>
 </html>
